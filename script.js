@@ -1,5 +1,6 @@
-// complete the given function
-//const alphanumeric = s.replace(/[^A-Za-z0-9]/g, '');
+function isPalindrome(s) {
+  // Step 1: Remove non-alphanumeric characters
+  const alphanumeric = s.replace(/[^A-Za-z0-9]/g, '');
 
   // Step 2: Convert to lowercase
   const lowercase = alphanumeric.toLowerCase();
@@ -8,20 +9,10 @@
   const reversed = lowercase.split('').reverse().join('');
   return lowercase === reversed;
 }
-function isPalindrome(s) {
-  // Remove non-alphanumeric characters and convert to lowercase
-  s = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
 
-  // Compare the string with its reverse
-  return s === s.split("").reverse().join("");
-}
+// Test cases
+console.log(isPalindrome("race a car"));  // Output: false
+console.log(isPalindrome("racecar"));    // Output: true
+console.log(isPalindrome("RaceCar"));    // Output: true
+console.log(isPalindrome("raceCAR"));    // Output: true
 
-// Example usage
-const input = "race a car";
-const isInputPalindrome = isPalindrome(input);
-console.log(isInputPalindrome); // Output: false
-
-function palindrome(str){
-
-}
-module.exports = palindrome
