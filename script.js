@@ -1,5 +1,5 @@
 // complete the given function
-const alphanumeric = s.replace(/[^A-Za-z0-9]/g, '');
+//const alphanumeric = s.replace(/[^A-Za-z0-9]/g, '');
 
   // Step 2: Convert to lowercase
   const lowercase = alphanumeric.toLowerCase();
